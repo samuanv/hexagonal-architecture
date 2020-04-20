@@ -13,6 +13,7 @@ Inputs and Outputs
 - DataSources: Outputs of our system implementing Repositories and connected to storage systems.
 - Controllers: Inputs of our system encapsulating the transport layer. They should trigger the Interactors.
 
+![Ticketing System Hexagonal Architecture]('img/HexagonalArch.jpg')
 
 *Note: The purpose of this code is to be used as a guide to explore hexagonal architecture and it is not supposed to run in production.*
 ## Getting started
