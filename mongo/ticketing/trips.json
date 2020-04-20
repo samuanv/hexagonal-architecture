@@ -1,0 +1,16 @@
+[
+    {
+      "id":"1",
+      "name":"GeeksHubs Meetup  - 30 Septiembre 2020",
+      "departureTime":"2020-09-30T16:00:00",
+      "arrivalTime":"2020-09-30T18:00:00",
+      "seatsAvailable":35
+    },
+    {
+      "id":"2",
+      "name":"GeeksHubs Meetup en IBM London  - 30 Octubre 2020",
+      "departureTime":"2020-10-30T16:00:00",
+      "arrivalTime":"2020-10-30T18:00:00",
+      "seatsAvailable":23
+    }
+  ]

@@ -1,0 +1,15 @@
+version: '3'
+services:
+  mongo:
+    image: mongo
+    container_name: mongo
+    ports:
+      - 27017:27017
+    volumes:
+      - './mongo:/data/db'
+  mongoclient:
+      image: mongoclient/mongoclient:latest
+      container_name: mongoclient
+      hostname: mongoclient
+      ports:
+        - 3300:3000
