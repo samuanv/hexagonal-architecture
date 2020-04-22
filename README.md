@@ -4,12 +4,15 @@ Sample code used during GeeksHubs online meetup talk 23/04/2020.
 Simple ticketing system using concepts of Hexagonal Architecture and leveraging separation of concerns.
 
 The code is divided in two main layers:
+
 Core
+
 - Entities: Business Objects
 - Repositories: Interfaces to interact with the entities
 - Interactors: Business logic, actions that the system can perform.
 
 Inputs and Outputs
+
 - DataSources: Outputs of our system implementing Repositories and connected to storage systems.
 - Controllers: Inputs of our system encapsulating the transport layer. They should trigger the Interactors.
 
