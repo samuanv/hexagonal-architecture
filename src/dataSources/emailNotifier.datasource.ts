@@ -3,7 +3,7 @@ import Ticket from '../core/entities/Ticket';
 import nodemailer from 'nodemailer';
 
 class EmailNotifier implements NotifierRepository {
-  public notify(ticket: Ticket, email: string): void {
+  public notify(ticket: Ticket, email: string): Promise<any> {
     const mailer = this.getMailer();
     const mailOptions = {
       from: '"Geekshub Bus 🚍"',
@@ -11,7 +11,7 @@ class EmailNotifier implements NotifierRepository {
       subject: `Tu billete para ${ticket.tripName}`,
       text: 'Tu billete!!',
     };
-    mailer.sendMail(mailOptions);
+    return mailer.sendMail(mailOptions);
   }
 
   private getMailer() {
