@@ -18,7 +18,7 @@ const saveBooking = (
     passengerSurname: passenger.surname,
   };
 
-  notifierRepository.notify(ticket, passenger.email);
+  await notifierRepository.notify(ticket, passenger.email);
 
   return ticket;
 };
